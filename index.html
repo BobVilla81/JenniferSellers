@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jennifer Sellers - Personal Financial Solutions</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap');
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+       
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #000000;
+            color: #f0c040;
+            text-align: center;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .hero {
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid #f0c040;
+            box-shadow: 0 0 40px rgba(240, 192, 64, 0.5);
+            margin: 0 auto 30px;
+        }
+
+        .logo {
+            max-width: 280px;
+            height: auto;
+            margin: 0 auto 20px;
+            display: block;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            font-size: 1.35rem;
+            color: #d4af37;
+            margin-bottom: 40px;
+        }
+
+        .gold-line {
+            height: 3px;
+            background: linear-gradient(to right, transparent, #f0c040, transparent);
+            max-width: 220px;
+            margin: 25px auto;
+        }
+
+        .container {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        form {
+            background-color: #111;
+            padding: 45px 35px;
+            border-radius: 12px;
+            border: 2px solid #f0c040;
+            margin: 50px auto;
+            max-width: 480px;
+        }
+
+        input {
+            width: 100%;
+            padding: 15px;
+            margin: 12px 0;
+            background: #222;
+            border: 1px solid #f0c040;
+            color: white;
+            font-size: 1.05rem;
+            border-radius: 6px;
+        }
+
+        button {
+            background-color: #f0c040;
+            color: #000;
+            border: none;
+            padding: 16px 50px;
+            font-size: 1.15rem;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #ffd700;
+            transform: scale(1.04);
+        }
+
+        p {
+            color: #ccc;
+            font-size: 1.05rem;
+        }
+
+        footer {
+            margin-top: 60px;
+            color: #555;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo (black & gold) -->
+        <img src="Images/logo_black&gold.png" alt="Jennifer Sellers" class="logo">
+
+        <!-- Hero Photo -->
+        <img src="Images/JenniferImage.png" alt="Jennifer Sellers" class="hero">
+       
+        <h1>Jennifer Sellers</h1>
+        <p class="subtitle">Personal Financial Solutions</p>
+        
+        <div class="gold-line"></div>
+        
+        <p>Get personalized guidance to protect what matters most and build a secure future for you and your family.</p>
+
+        <form id="emailForm" action="https://formspree.io/f/YOUR_CODE_HERE" method="POST">
+            <input type="text" name="name" placeholder="Your Full Name" required>
+            <input type="email" name="email" placeholder="Your Email Address" required>
+            <button type="submit">Join My List – Stay Connected</button>
+        </form>
+
+        <p>I’ll personally follow up to see how I can best support your goals.</p>
+    </div>
+
+    <footer>
+        © 2026 Jennifer Sellers • Naperville, IL area
+    </footer>
+
+    <script>
+        document.getElementById('emailForm').addEventListener('submit', function() {
+            setTimeout(() => {
+                alert("Thank you! Jennifer will be in touch soon.");
+            }, 600);
+        });
+    </script>
+</body>
+</html>
