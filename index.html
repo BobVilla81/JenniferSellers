@@ -136,6 +136,9 @@
         <p>Get personalized guidance to protect what matters most and build a secure future for you and your family.</p>
 
         <form id="emailForm" action="https://formspree.io/f/YOUR_CODE_HERE" method="POST">
+            <!-- Hidden field to prevent Formspree default thank you page -->
+            <input type="hidden" name="_next" value="https://bobvilla81.github.io/JenniferSellers/">
+            
             <input type="text" name="name" placeholder="Your Full Name" required>
             <input type="email" name="email" placeholder="Your Email Address" required>
             <button type="submit">Join My List – Stay Connected</button>
@@ -151,8 +154,8 @@
     <script>
         document.getElementById('emailForm').addEventListener('submit', function() {
             setTimeout(() => {
-                alert("Thank you! Jennifer will be in touch soon.");
-            }, 600);
+                alert("Message sent to Jennifer Sellers – she will be in touch!");
+            }, 800);
         });
     </script>
 </body>
