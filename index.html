@@ -14,22 +14,32 @@
             background-color: #000000;
             color: #f0c040;
             line-height: 1.6;
-            padding: 30px 20px;
+            padding: 20px 15px;
             min-height: 100vh;
         }
 
         .header {
             max-width: 620px;
-            margin: 0 auto 30px;
+            margin: 0 auto 25px;
             display: flex;
             justify-content: flex-start;
             align-items: center;
         }
 
         .logo {
-            max-width: 220px;
+            max-width: 180px;
             height: auto;
             display: block;
+        }
+
+        /* Make logo smaller on mobile */
+        @media (max-width: 480px) {
+            .logo {
+                max-width: 140px;
+            }
+            body {
+                padding: 15px 12px;
+            }
         }
 
         .container {
@@ -39,26 +49,33 @@
         }
 
         .hero {
-            width: 260px;
-            height: 260px;
+            width: 240px;
+            height: 240px;
             border-radius: 50%;
             object-fit: cover;
             border: 6px solid #f0c040;
             box-shadow: 0 0 40px rgba(240, 192, 64, 0.5);
-            margin: 0 auto 30px;
+            margin: 0 auto 25px;
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                width: 200px;
+                height: 200px;
+            }
         }
 
         h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 2.8rem;
+            font-size: 2.6rem;
             color: #ffffff;
             margin-bottom: 8px;
         }
 
         .subtitle {
-            font-size: 1.35rem;
+            font-size: 1.25rem;
             color: #d4af37;
-            margin-bottom: 40px;
+            margin-bottom: 35px;
             font-weight: 500;
         }
 
@@ -71,21 +88,21 @@
 
         form {
             background-color: #111;
-            padding: 45px 35px;
+            padding: 40px 25px;
             border-radius: 12px;
             border: 2px solid #f0c040;
-            margin: 50px auto;
-            max-width: 480px;
+            margin: 45px auto;
+            max-width: 460px;
         }
 
         input {
             width: 100%;
-            padding: 15px;
+            padding: 14px;
             margin: 12px 0;
             background: #222;
             border: 1px solid #f0c040;
             color: white;
-            font-size: 1.05rem;
+            font-size: 1.02rem;
             border-radius: 6px;
         }
 
@@ -93,12 +110,12 @@
             background-color: #f0c040;
             color: #000;
             border: none;
-            padding: 16px 50px;
-            font-size: 1.15rem;
+            padding: 15px 45px;
+            font-size: 1.1rem;
             font-weight: 600;
             border-radius: 6px;
             cursor: pointer;
-            margin-top: 15px;
+            margin-top: 10px;
             transition: 0.3s;
         }
 
@@ -113,7 +130,7 @@
         }
 
         .social-buttons {
-            margin: 40px 0;
+            margin: 40px 0 30px;
             display: flex;
             justify-content: center;
             gap: 15px;
@@ -123,8 +140,8 @@
         .social-btn {
             background-color: #f0c040;
             color: #000;
-            padding: 12px 28px;
-            font-size: 1.05rem;
+            padding: 12px 26px;
+            font-size: 1.02rem;
             font-weight: 600;
             border-radius: 6px;
             text-decoration: none;
@@ -141,11 +158,11 @@
             color: #ccc;
             font-size: 1.05rem;
             max-width: 520px;
-            margin: 0 auto;
+            margin: 0 auto 18px;
         }
 
         footer {
-            margin-top: 80px;
+            margin-top: 70px;
             color: #555;
             font-size: 0.9rem;
         }
@@ -166,21 +183,21 @@
             background-color: #111;
             border: 3px solid #f0c040;
             border-radius: 12px;
-            padding: 45px 35px;
-            max-width: 400px;
+            padding: 40px 30px;
+            max-width: 380px;
             text-align: center;
             box-shadow: 0 0 50px rgba(240, 192, 64, 0.7);
         }
 
         .modal-content h2 {
             color: #f0c040;
-            font-size: 1.8rem;
+            font-size: 1.7rem;
             margin-bottom: 15px;
         }
 
         .modal-content p {
             color: #ddd;
-            font-size: 1.15rem;
+            font-size: 1.12rem;
             line-height: 1.5;
         }
 
@@ -188,17 +205,17 @@
             background-color: #f0c040;
             color: #000;
             border: none;
-            padding: 14px 45px;
-            font-size: 1.1rem;
+            padding: 13px 40px;
+            font-size: 1.05rem;
             font-weight: 600;
             border-radius: 6px;
             cursor: pointer;
-            margin-top: 25px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <!-- Logo at top left -->
+    <!-- Logo at top left - smaller and mobile optimized -->
     <div class="header">
         <img src="Images/logo_black&gold.png" alt="Jennifer Sellers" class="logo">
     </div>
@@ -213,9 +230,9 @@
         <div class="gold-line"></div>
         
         <p>Jennifer Sellers is a business professional who enjoys building meaningful relationships and connecting with people in her community.</p>
-        <p style="margin-top: 20px;">She has spent her career working with individuals, families, and business owners in areas related to protection, long-term planning, and navigating important life decisions.</p>
-        <p style="margin-top: 20px;">Jennifer is passionate about helping others feel more confident and informed, and values trust, education, and genuine connection in every interaction.</p>
-        <p style="margin-top: 20px;">Outside of her professional life, she enjoys networking, supporting local businesses, and staying active in her community.</p>
+        <p>She has spent her career working with individuals, families, and business owners in areas related to protection, long-term planning, and navigating important life decisions.</p>
+        <p>Jennifer is passionate about helping others feel more confident and informed, and values trust, education, and genuine connection in every interaction.</p>
+        <p>Outside of her professional life, she enjoys networking, supporting local businesses, and staying active in her community.</p>
 
         <form id="emailForm">
             <input type="text" name="name" placeholder="Your Full Name" required>
@@ -228,7 +245,7 @@
         <!-- LinkedIn & Calendly Buttons -->
         <div class="social-buttons">
             <a href="https://www.linkedin.com/in/jensellers" target="_blank" class="social-btn">Connect on LinkedIn</a>
-            <a href="https://calendly.com/jennifersellers" target="_blank" class="social-btn">Schedule a Call</a>
+            <a href="https://calendly.com/your-calendly-link" target="_blank" class="social-btn">Schedule a Call</a>
         </div>
     </div>
 
