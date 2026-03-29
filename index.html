@@ -59,13 +59,14 @@
             font-size: 1.35rem;
             color: #d4af37;
             margin-bottom: 40px;
+            font-weight: 500;
         }
 
         .gold-line {
             height: 3px;
             background: linear-gradient(to right, transparent, #f0c040, transparent);
-            max-width: 220px;
-            margin: 25px auto;
+            max-width: 260px;
+            margin: 30px auto;
         }
 
         form {
@@ -111,18 +112,45 @@
             cursor: not-allowed;
         }
 
+        .social-buttons {
+            margin: 40px 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .social-btn {
+            background-color: #f0c040;
+            color: #000;
+            padding: 12px 28px;
+            font-size: 1.05rem;
+            font-weight: 600;
+            border-radius: 6px;
+            text-decoration: none;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        .social-btn:hover {
+            background-color: #ffd700;
+            transform: scale(1.05);
+        }
+
         p {
             color: #ccc;
             font-size: 1.05rem;
+            max-width: 520px;
+            margin: 0 auto;
         }
 
         footer {
-            margin-top: 70px;
+            margin-top: 80px;
             color: #555;
             font-size: 0.9rem;
         }
 
-        /* Clean Custom Success Modal - No browser domain name */
+        /* Clean Success Modal */
         #successModal {
             display: none;
             position: fixed;
@@ -176,14 +204,18 @@
     </div>
 
     <div class="container">
+        <!-- Hero Photo -->
         <img src="Images/JenniferImage.png" alt="Jennifer Sellers" class="hero">
        
         <h1>Jennifer Sellers</h1>
-        <p class="subtitle">Personal Financial Solutions</p>
+        <p class="subtitle">Professional | Community Connector | Relationship Builder</p>
         
         <div class="gold-line"></div>
         
-        <p>Get personalized guidance to protect what matters most and build a secure future for you and your family.</p>
+        <p>Jennifer Sellers is a business professional who enjoys building meaningful relationships and connecting with people in her community.</p>
+        <p style="margin-top: 20px;">She has spent her career working with individuals, families, and business owners in areas related to protection, long-term planning, and navigating important life decisions.</p>
+        <p style="margin-top: 20px;">Jennifer is passionate about helping others feel more confident and informed, and values trust, education, and genuine connection in every interaction.</p>
+        <p style="margin-top: 20px;">Outside of her professional life, she enjoys networking, supporting local businesses, and staying active in her community.</p>
 
         <form id="emailForm">
             <input type="text" name="name" placeholder="Your Full Name" required>
@@ -192,6 +224,12 @@
         </form>
 
         <p>I’ll personally follow up to see how I can best support your goals.</p>
+
+        <!-- LinkedIn & Calendly Buttons -->
+        <div class="social-buttons">
+            <a href="https://www.linkedin.com/in/jensellers" target="_blank" class="social-btn">Connect on LinkedIn</a>
+            <a href="https://calendly.com/jennifersellers" target="_blank" class="social-btn">Schedule a Call</a>
+        </div>
     </div>
 
     <footer>
@@ -232,7 +270,7 @@
                 });
 
                 if (response.ok) {
-                    successModal.style.display = 'flex';   // Show clean modal only
+                    successModal.style.display = 'flex';
                 } else {
                     alert("Something went wrong. Please try again.");
                 }
